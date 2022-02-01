@@ -1,0 +1,14 @@
+{
+  "name": "language-ram",
+  "version": "0.0.0",
+  "description": "Langage utilise pour la machine RAM",
+  "keywords": [
+    "language",
+    "grammar"
+  ],
+  "repository": "https://github.com/CactusCata/atom_ram_package",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

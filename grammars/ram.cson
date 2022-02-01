@@ -1,0 +1,50 @@
+# If this is your first time writing a language grammar, check out:
+#   - https://flight-manual.atom.io/hacking-atom/sections/creating-a-grammar/
+
+'scopeName': 'source.ram'
+'name': 'Ram'
+'fileTypes': [
+  'ram'
+]
+'patterns': [
+  {
+    'match': '\\/\\/.*'
+    'name': 'constant.character'
+  },
+  {
+    'match': '\\b(READ|WRITE)\\b'
+    'name': 'keyword.operator'
+  },
+  {
+    'match': '\\b(LOAD|STORE)\\b'
+    'name': 'keyword.operator'
+  },
+  {
+    'match': '\\b(DEC|INC|ADD|SUB|MUL|DIV|MOD)\\b'
+    'name': 'keyword.operator'
+  },
+  {
+    'match': '\\b(JUMP|JUMZ|JUML|JUMG)\\b'
+    'name': 'keyword.operator'
+  },
+  {
+    'match': '\\bSTOP\\b'
+    'name': 'entity.name.tag'
+  },
+  {
+    'match': '\\bNOP\\b.*'
+    'name': 'comment.line.double-slash'
+  }
+  {
+    'match': '#\\d+'
+    'name': 'constant.numeric'
+  },
+  {
+    'match': '\\d+'
+    'name': 'constant.character'
+  },
+  {
+    'match': '@\\d+'
+    'name': 'markup.underline.link'
+  }
+]
